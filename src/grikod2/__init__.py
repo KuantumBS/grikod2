@@ -23,8 +23,9 @@ if os.getenv("DEVELOPMENT") == "true":
 # F401 hatasını önlemek için sadece kullanacağınız şeyleri dışa aktarın
 # Aksi halde linter'lar "imported but unused" uyarısı verir
 try:
-    from .grikod2 import *  # gerekirse burada belirli fonksiyonları seçmeli yapmak daha güvenlidir
-    from . import grikod2  # Modülün kendisine doğrudan erişim isteniyorsa
+    #from .grikod2 import *  # gerekirse burada belirli fonksiyonları seçmeli yapmak daha güvenlidir
+    #from . import grikod2  # Modülün kendisine doğrudan erişim isteniyorsa
+    from .grikod import ikili_2_gri_kod, run_interactive_converter  # run_interactive_converter fonksiyonunu da dışa aktar
 except ImportError as e:
     warnings.warn(f"Gerekli modül yüklenemedi: {e}", ImportWarning)
 
@@ -43,10 +44,10 @@ def eski_fonksiyon():
         stacklevel=2
     )
 
+__all__ = ["ikili_2_gri_kod", "run_interactive_converter"]
 
 # Paket sürüm numarası
 __version__ = "1.1.2"
-
 
 # Geliştirme sırasında test etmek için
 if __name__ == "__main__":
