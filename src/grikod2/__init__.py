@@ -47,7 +47,7 @@ def eski_fonksiyon():
 __all__ = ["ikili_2_gri_kod", "run_interactive_converter"]
 
 # Paket sürüm numarası
-__version__ = "1.1.2"
+__version__ = "1.1.3"
 
 # Geliştirme sırasında test etmek için
 if __name__ == "__main__":
