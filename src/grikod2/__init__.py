@@ -7,8 +7,16 @@ from __future__ import annotations  # Gelecekteki özellikler için (Python 3.7+
 import importlib
 import warnings
 import os
+
+#if os.getenv("DEVELOPMENT") == "true":
+    #importlib.reload(grikod2)
+# Geliştirme modunda otomatik yeniden yükleme
 if os.getenv("DEVELOPMENT") == "true":
-    importlib.reload(grikod2)
+    try:
+        import grikod2.grikod2
+        importlib.reload(grikod2.grikod2)
+    except (ImportError, KeyError):
+        pass  # İlk kez import ediliyorsa atla
 
 
 # Göreli modül içe aktarmaları
