@@ -1,4 +1,5 @@
 # grikod2 (Gri Kod, Gray Code)
+---
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.15352206.svg)](https://doi.org/10.5281/zenodo.15352206)
 
@@ -17,6 +18,7 @@
 [![Binder](https://terrarium.evidencepub.io/badge_logo.svg)](https://terrarium.evidencepub.io/v2/gh/KuantumBS/grikod2/HEAD)
 [![PyPI version](https://badge.fury.io/py/grikod2.svg)](https://badge.fury.io/py/grikod2)
 [![PyPI Downloads](https://static.pepy.tech/badge/grikod2)](https://pepy.tech/projects/grikod2)
+[![Linted with Ruff](https://img.shields.io/badge/Linted%20with-Ruff-green?logo=python&logoColor=white)](https://github.com/astral-sh/ruff)
 
 ---
 
