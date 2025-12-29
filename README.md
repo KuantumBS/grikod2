@@ -210,8 +210,4 @@ Keçeci, Mehmet. "Grikod2". Zenodo, 06 Mayıs 2025. https://doi.org/10.5281/zeno
 This project is licensed under the MIT License.
 ```
 
-```
-
 [![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FKuantumBS%2Fgrikod2.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2FKuantumBS%2Fgrikod2?ref=badge_large)
-
-```
