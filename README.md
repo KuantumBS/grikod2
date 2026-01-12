@@ -217,30 +217,53 @@ This project is licensed under the MIT License.
 # Pixi:
 
 pixi init try-grikod
+
 cd try-grikod
+
 pixi workspace channel add https://repo.prefix.dev/bilgi --prepend
+
 ✔ Added https://repo.prefix.dev/bilgi
+
 pixi add grikod
+
 ✔ Added grikod >=1.1.9,<2
+
 pixi install
+
 pixi shell
+
 pixi run python -c "import grikod; print(grikod.__version__)"
+
 # Çıktı: 1.1.6
 
 pixi remove grikod
+
 conda install -c https://prefix.dev/bilgi grikod
+
 pixi run python -c "import grikod; print(grikod.__version__)"
+
 # Çıktı: 1.1.6
+
 pixi run pip list | grep grikod
+
 # grikod  1.1.6
+
 pixi run pip show grikod
+
 Name: grikod
+
 Version: 1.1.6
+
 Summary: Converts binary numbers to Gray Code. Grikod (Gray Code, Grey Code)
+
 Home-page: https://github.com/KuantumBS/grikod
+
 Author: Mehmet Keçeci
+
 Author-email: Mehmet Keçeci <mkececi@yaani.com>
+
 License: MIT License
+
 Copyright (c) 2024 Mehmet Keçeci
 
 ---
