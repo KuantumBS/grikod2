@@ -262,7 +262,7 @@ Home-page: https://github.com/KuantumBS/grikod
 
 Author: Mehmet Keçeci
 
-Author-email: Mehmet Keçeci <mkececi@yaani.com>
+Author-email: Mehmet Keçeci <...>
 
 License: MIT License
 
