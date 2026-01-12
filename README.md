@@ -234,7 +234,7 @@ pixi shell
 
 pixi run python -c "import grikod; print(grikod.__version__)"
 
-# Çıktı: 1.1.6
+### Çıktı: 1.1.6
 
 pixi remove grikod
 
@@ -242,7 +242,7 @@ conda install -c https://prefix.dev/bilgi grikod
 
 pixi run python -c "import grikod; print(grikod.__version__)"
 
-# Çıktı: 1.1.6
+### Çıktı: 1.1.6
 
 pixi run pip list | grep grikod
 
