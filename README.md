@@ -246,7 +246,7 @@ pixi run python -c "import grikod; print(grikod.__version__)"
 
 pixi run pip list | grep grikod
 
-# grikod  1.1.6
+### grikod  1.1.6
 
 pixi run pip show grikod
 
