@@ -211,13 +211,7 @@ This project is licensed under the MIT License.
 
 ```
 
-```
 [![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FWhiteSymmetry%2Fgrikod2.svg?type=shield&issueType=license)](https://app.fossa.com/projects/git%2Bgithub.com%2FWhiteSymmetry%2Fgrikod2?ref=badge_shield&issueType=license)
-
-```
-
-
-```
 
 # Pixi:
 
@@ -273,4 +267,3 @@ License: MIT License
 
 Copyright (c) 2025 Mehmet Keçeci
 
-```
