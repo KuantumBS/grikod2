@@ -212,5 +212,63 @@ This project is licensed under the MIT License.
 
 [![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FWhiteSymmetry%2Fgrikod2.svg?type=shield&issueType=license)](https://app.fossa.com/projects/git%2Bgithub.com%2FWhiteSymmetry%2Fgrikod2?ref=badge_shield&issueType=license)
 
+```
+# Pixi:
+
+
+[![Pixi](https://img.shields.io/badge/Pixi-Pixi-brightgreen.svg)](https://prefix.dev/channels/bilgi)
+
+
+pixi init grikod2
+
+cd grikod2
+
+pixi workspace channel add https://repo.prefix.dev/bilgi --prepend
+
+✔ Added https://repo.prefix.dev/bilgi
+
+pixi add grikod2
+
+✔ Added grikod2 >=1.1.3,<2
+
+pixi install
+
+pixi shell
+
+pixi run python -c "import grikod2; print(grikod2.__version__)"
+
+### Çıktı: 1.1.3
+
+pixi remove grikod2
+
+conda install -c https://prefix.dev/bilgi grikod2
+
+pixi run python -c "import grikod2; print(grikod2.__version__)"
+
+### Çıktı: 1.1.3
+
+pixi run pip list | grep grikod2
+
+### grikod  1.1.3
+
+pixi run pip show grikod2
+
+Name: grikod2
+
+Version: 1.1.3
+
+Summary: Converts binary numbers to Gray Code. Grikod2 (Gray Code, Grey Code)
+
+Home-page: https://github.com/KuantumBS/grikod2
+
+Author: Mehmet Keçeci
+
+Author-email: Mehmet Keçeci <...>
+
+License: MIT License
+
+Copyright (c) 2025 Mehmet Keçeci
+
+```
 
 
