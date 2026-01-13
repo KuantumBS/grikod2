@@ -15,5 +15,5 @@ setup(
     description="Binary to Gray code conversion package for efficient data encoding.",
     url="https://github.com/KuantumBS/grikod2",
     license="MIT",
-    python_requires='>=3.9',
+    python_requires='>=3.10',
 )
