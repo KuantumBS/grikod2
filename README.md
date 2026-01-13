@@ -118,6 +118,16 @@ pip install git+https://github.com/KuantumBS/grikod2.git
 
 ```python
 import grikod2
+grikod2.__version__
+```
+
+```python
+import grikod2
+grikod2.ikili_2_gri_kod("1010")
+```
+
+```python
+import grikod2
 
 def main():
     # Binary numbers: ikili sayılar
