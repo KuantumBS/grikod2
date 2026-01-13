@@ -191,7 +191,15 @@ def main():
 if __name__ == "__main__":
     main()
 ```
-    
+
+```python
+import grikod2
+
+if __name__ == "__main__":
+    print("🚀 GriKod2 Etkileşimli Moduna Hoş Geldiniz!")
+    grikod2.run_interactive_converter()
+```
+
 ---
 
 ### Development
