@@ -11,7 +11,7 @@ authors = [
 ]
 description = "Converts binary numbers to Gray Code. grikod2 (Gray Code, Grey Code)"
 readme = "README.md"
-requires-python = ">=3.8"
+requires-python = ">=3.10"
 dependencies = [
 ]
 keywords = ["Gri Kod", "Gray Code", "Binary", "Encoding"]
