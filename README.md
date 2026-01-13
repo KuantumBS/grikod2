@@ -227,7 +227,7 @@ pixi workspace channel add https://repo.prefix.dev/bilgi --prepend
 
 pixi add grikod2
 
-✔ Added grikod2 >=1.1.3,<2
+✔ Added grikod2 >=1.1.4,<2
 
 pixi install
 
@@ -235,7 +235,7 @@ pixi shell
 
 pixi run python -c "import grikod2; print(grikod2.__version__)"
 
-### Çıktı: 1.1.3
+### Çıktı: 1.1.4
 
 pixi remove grikod2
 
@@ -243,17 +243,17 @@ conda install -c https://prefix.dev/bilgi grikod2
 
 pixi run python -c "import grikod2; print(grikod2.__version__)"
 
-### Çıktı: 1.1.3
+### Çıktı: 1.1.4
 
 pixi run pip list | grep grikod2
 
-### grikod  1.1.3
+### grikod  1.1.4
 
 pixi run pip show grikod2
 
 Name: grikod2
 
-Version: 1.1.3
+Version: 1.1.4
 
 Summary: Converts binary numbers to Gray Code. Grikod2 (Gray Code, Grey Code)
 
