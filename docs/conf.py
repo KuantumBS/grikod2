@@ -1,7 +1,7 @@
 # Project Information
 project = 'grikod2'
 author = 'Mehmet Keçeci'
-copyright = '2024, Mehmet Keçeci'
+copyright = '2025, Mehmet Keçeci'
 
 # Version Management
 # from setuptools_scm import get_version
