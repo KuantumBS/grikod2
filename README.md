@@ -208,16 +208,20 @@ Keçeci, Mehmet. "Grikod2". Zenodo, 06 Mayıs 2025. https://doi.org/10.5281/zeno
 
 ```
 This project is licensed under the MIT License.
+
 ```
 
+```
 [![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FWhiteSymmetry%2Fgrikod2.svg?type=shield&issueType=license)](https://app.fossa.com/projects/git%2Bgithub.com%2FWhiteSymmetry%2Fgrikod2?ref=badge_shield&issueType=license)
 
 ```
+
+
+```
+
 # Pixi:
 
-
 [![Pixi](https://img.shields.io/badge/Pixi-Pixi-brightgreen.svg)](https://prefix.dev/channels/bilgi)
-
 
 pixi init grikod2
 
@@ -270,5 +274,3 @@ License: MIT License
 Copyright (c) 2025 Mehmet Keçeci
 
 ```
-
-
