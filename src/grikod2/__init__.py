@@ -25,7 +25,7 @@ if os.getenv("DEVELOPMENT") == "true":
 try:
     #from .grikod2 import *  # gerekirse burada belirli fonksiyonları seçmeli yapmak daha güvenlidir
     #from . import grikod2  # Modülün kendisine doğrudan erişim isteniyorsa
-    from .grikod import ikili_2_gri_kod, run_interactive_converter  # run_interactive_converter fonksiyonunu da dışa aktar
+    from .grikod2 import ikili_2_gri_kod, run_interactive_converter  # run_interactive_converter fonksiyonunu da dışa aktar
 except ImportError as e:
     warnings.warn(f"Gerekli modül yüklenemedi: {e}", ImportWarning)
 
@@ -39,7 +39,7 @@ def eski_fonksiyon():
     warnings.warn(
         "eski_fonksiyon() artık kullanılmamaktadır ve gelecekte kaldırılacaktır. "
         "Lütfen yeni alternatif fonksiyonları kullanın. "
-        "grikod2 Python 3.9-3.14 sürümlerinde desteklenmektedir.",
+        "grikod2 Python 3.10-3.14 sürümlerinde desteklenmektedir.",
         category=DeprecationWarning,
         stacklevel=2
     )
