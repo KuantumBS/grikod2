@@ -165,10 +165,6 @@ Binary: İkili: 1111 -> Gri Kod: 1000
 #111:100
 ```
 
-```python
-import grikod2
-grikod2.__version__
-```
 ---
 
 ### Development
