@@ -165,6 +165,33 @@ Binary: İkili: 1111 -> Gri Kod: 1000
 #111:100
 ```
 
+```python
+import grikod2
+
+def main():
+    print("🌟 Gri Kod Dönüştürücü - grikod2 Paketi ile")
+    print("Geçerli bir ikili sayı girin (örneğin: 1101)")
+    print("Çıkmak için 'q' yazın.\n")
+
+    while True:
+        user_input = input("İkili sayı: ").strip()
+
+        if user_input.lower() == 'q':
+            print("👋 Çıkılıyor. İyi günler!")
+            break
+
+        try:
+            gray_code = grikod2.ikili_2_gri_kod(user_input)
+            print(f"✅ Gri Kod: {gray_code}\n")
+        except grikod2.InvalidBinaryError as e:
+            print(f"❌ Giriş Hatası: {e}\n")
+        except Exception as e:
+            print(f"⚠️ Beklenmeyen hata: {e}\n")
+
+if __name__ == "__main__":
+    main()
+```
+    
 ---
 
 ### Development
