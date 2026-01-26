@@ -1,0 +1,32 @@
+# .github/workflows/benchmark.yml
+name: Performance Benchmark
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  benchmark:
+    runs-on: ubuntu-25.10
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Setup Conda
+        uses: conda-incubator/setup-miniconda@v3
+        with:
+          python-version: 3.11
+          channels: conda-forge
+      
+      - name: Install pyperf
+        run: conda install -c conda-forge pyperf
+      
+      - name: Run benchmark
+        run: |
+          python -m pyperf timeit -s "import math" "math.sqrt(2)" --rigorous -o sqrt_bench.json
+      
+      - name: Upload results
+        uses: actions/upload-artifact@v4
+        with:
+          name: benchmark-results
+          path: sqrt_bench.json
