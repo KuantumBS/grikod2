@@ -26,7 +26,7 @@ jobs:
           python -m pyperf timeit -s "import math" "math.sqrt(2)" --rigorous -o sqrt_bench.json
       
       - name: Upload results
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: benchmark-results
           path: sqrt_bench.json
