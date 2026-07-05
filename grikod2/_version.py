@@ -1,6 +1,6 @@
 # _version.py
 
-__version__ = "0.1.5"
+__version__ = "1.1.5"
 __license__ = "MIT"
 __description__ = "Binary to Gray code conversion package for efficient data encoding."
 __author__ = "Mehmet Keçeci"
