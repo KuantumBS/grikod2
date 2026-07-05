@@ -16,7 +16,7 @@ sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
 
 def get_version():
     """Parse the AST of __init__.py to find the __version__ assignment safely."""
-    with open('src/__init__.py', 'r', encoding='utf-8') as f:
+    with open('grikod2/__init__.py', 'r', encoding='utf-8') as f:
         tree = ast.parse(f.read())
         
     for node in ast.walk(tree):
@@ -27,10 +27,10 @@ def get_version():
                     if isinstance(node.value, ast.Constant) and isinstance(node.value.value, str):
                         return node.value.value
                         
-    raise RuntimeError("Unable to find __version__ in src/__init__.py")
+    raise RuntimeError("Unable to find __version__ in grikod2/__init__.py")
 """
 def get_version():
-    with open('src/__init__.py', 'r', encoding='utf-8') as f:
+    with open('grikod2/__init__.py', 'r', encoding='utf-8') as f:
         content = f.read()
     match = re.search(r"^__version__ = ['\"]([^'\"]*)['\"]", content, re.M)
     if match:
