@@ -5,8 +5,8 @@ requires = ["setuptools>=82.0.1"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "grikod3"
-version = "0.1.1"
+name = "grikod2"
+version = "0.1.5"
 dynamic = ["keywords", "maintainers"]
 license = "AGPL-3.0-or-later"  # SPDX ID
 
@@ -35,7 +35,7 @@ python_files = ["test_*.py"]
 python_functions = ["test_*"]
 
 [tool.setuptools.packages.find]
-include = ["grikod3*"]
+include = ["grikod2*"]
 exclude = ["binder", "build*", "content", "data", "dist", "dist*", "docs", "docs*", "examples*", "examples", "notebooks", "tests", "tests*"]
 
 [tool.setuptools]
@@ -45,8 +45,8 @@ include-package-data = true
 "*" = ["*.py", "*.pyi", "*.pyd", "*.so"]  # Sadece Python dosyaları
 
 [project.urls]
-Homepage = "https://github.com/WhiteSymmetry/grikod3"
-Repository = "https://github.com/WhiteSymmetry/grikod3"
+Homepage = "https://github.com/WhiteSymmetry/grikod2"
+Repository = "https://github.com/WhiteSymmetry/grikod2"
 
 [dependency-groups]
 build = [
