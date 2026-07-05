@@ -6,7 +6,7 @@ copyright = '2025, Mehmet Keçeci'
 # Version Management
 # from setuptools_scm import get_version
 # version = get_version(root='..', relative_to=__file__)
-version = '1.1.4'  # Replace with your actual version number
+version = '0.1.5'  # Replace with your actual version number
 release = version
 
 # General Configuration
