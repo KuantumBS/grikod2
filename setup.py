@@ -16,7 +16,7 @@ sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
 
 def get_version():
     """Parse the AST of __init__.py to find the __version__ assignment safely."""
-    with open('grikod3/__init__.py', 'r', encoding='utf-8') as f:
+    with open('src/__init__.py', 'r', encoding='utf-8') as f:
         tree = ast.parse(f.read())
         
     for node in ast.walk(tree):
@@ -27,10 +27,10 @@ def get_version():
                     if isinstance(node.value, ast.Constant) and isinstance(node.value.value, str):
                         return node.value.value
                         
-    raise RuntimeError("Unable to find __version__ in grikod3/__init__.py")
+    raise RuntimeError("Unable to find __version__ in src/__init__.py")
 """
 def get_version():
-    with open('grikod3/__init__.py', 'r', encoding='utf-8') as f:
+    with open('src/__init__.py', 'r', encoding='utf-8') as f:
         content = f.read()
     match = re.search(r"^__version__ = ['\"]([^'\"]*)['\"]", content, re.M)
     if match:
@@ -45,7 +45,7 @@ def get_install_requires():
     ]
 
 setup(
-    name="grikod3",
+    name="grikod2",
     version=get_version(),
     description="Binary to Gray code conversion package for efficient data encoding.",
     long_description=long_description,
@@ -54,10 +54,10 @@ setup(
     maintainer="Mehmet Keçeci",
     author_email="mkececi@yaani.com",
     maintainer_email="mkececi@yaani.com",
-    url="https://github.com/WhiteSymmetry/grikod3",
+    url="https://github.com/WhiteSymmetry/grikod2",
     #packages=find_packages(),
     packages=find_packages(
-        include=["grikod3", "grikod3.*"],
+        include=["grikod2", "grikod2.*"],
         exclude=[
             "binder", "content", "data", "notebooks",
             "tests", "tests.*",
@@ -69,21 +69,21 @@ setup(
     ),
     include_package_data=True,
     package_data={
-        "grikod3": ["__init__.py", "_version.py", "*.pyi"]
+        "grikod2": ["__init__.py", "_version.py", "*.pyi"]
     },
     install_requires=get_install_requires(),
     extras_require={
         'test': [
             "pytest",
             "pytest-cov",
-            "grikod3",
+            "grikod2",
         ],
         'dev': [
             "pytest",
             "pytest-cov",
             "twine",
             "wheel",
-            "grikod3",
+            "grikod2",
         ]
     },
     classifiers=[
@@ -95,10 +95,10 @@ setup(
     ],
     python_requires='>=3.11',
     license="AGPL-3.0-or-later",
-    keywords="grikod3 grikod graycode",
+    keywords="grikod2 grikod graycode",
     project_urls={
-        "Documentation": "https://github.com/WhiteSymmetry/grikod3",
-        "Source": "https://github.com/WhiteSymmetry/grikod3",
-        "Tracker": "https://github.com/WhiteSymmetry/grikod3/issues",
+        "Documentation": "https://github.com/WhiteSymmetry/grikod2",
+        "Source": "https://github.com/WhiteSymmetry/grikod2",
+        "Tracker": "https://github.com/WhiteSymmetry/grikod2/issues",
     },
 )
