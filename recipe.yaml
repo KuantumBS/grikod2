@@ -1,0 +1,59 @@
+# recipe-noarch-python.yaml
+schema_version: 1
+
+# this sets up "context variables" (in this case name and version) that
+# can later be used in Jinja expressions
+context:
+  version: 0.1.1
+  name: grikod3
+
+# top level package information (name and version)
+package:
+  name: grikod3
+  version: 0.1.1
+
+# location to get the source from
+#`source` are `url`, `sha256`, `md5`, `patches`, `file_name` and `target_directory`
+source:
+  url: 
+  sha256: 
+
+# build number (should be incremented if a new build is made, but version is not incrementing)
+build:
+  number: 1
+  script: python -m pip install --no-deps --ignore-installed .
+  noarch: python
+
+# the requirements at build and runtime
+requirements:
+  host:
+    - python
+    - pip
+    - setuptools
+    - wheel
+  run:
+   - python >=3.11  # hypercomplex uyumlu versiyon
+   - numpy  # grikod3 numpy kullanıyor
+   - pip
+
+# tests to validate that the package works as expected
+#tests:
+#  requires: []  # veya boş liste
+#  - python:
+#      imports:
+#        - grikod3
+
+# information about the package
+about:
+  homepage: https://github.com/WhiteSymmetry/grikod3/
+  license: GPL-3.0-or-later
+  summary: 'grikod3'
+  description: |
+    grikod3
+  repository: https://github.com/WhiteSymmetry/grikod3/
+  documentation: https://github.com/WhiteSymmetry/grikod3/
+
+# the below is conda-forge specific!
+extra:
+  recipe-maintainers:
+    - bilgi

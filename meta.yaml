@@ -1,7 +1,7 @@
-{% set version = "0.1.5" %}
+{% set version = "0.1.1" %}
 
 package:
-  name: grikod2
+  name: grikod3
   version: {{ version }}
 
 source:
@@ -25,12 +25,12 @@ requirements:
     - python
 
 about:
-  home: https://github.com/KuantumBS/grikod2
-  license: MIT
+  home: https://github.com/WhiteSymmetry/grikod3
+  license: AGPL-3.0-or-later
   summary: 'Binary to Gray code conversion package.'
   description: |
     Binary to Gray code conversion package.
-  dev_url: https://github.com/KuantumBS/grikod2
-  doc_url: https://github.com/KuantumBS/grikod2
-  doc_source_url: https://github.com/KuantumBS/grikod2/blob/main/README.md
+  dev_url: https://github.com/WhiteSymmetry/grikod3
+  doc_url: https://github.com/WhiteSymmetry/grikod3
+  doc_source_url: https://github.com/WhiteSymmetry/grikod3/blob/main/README.md
   
