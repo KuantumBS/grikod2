@@ -1,4 +1,4 @@
-# grikod2 (Gri Kod, Gray Code)
+# grikod2 (Grikod, Gri Kod, Gray Code, GrayCode)
 ---
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.15352206.svg)](https://doi.org/10.5281/zenodo.15352206)
