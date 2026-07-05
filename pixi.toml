@@ -3,12 +3,12 @@ preview = ["pixi-build"]
 authors = ["Mehmet Keçeci <mkececi@yaani.com>"]
 channels = ["pypi", "https://prefix.dev/conda-forge", "https://conda.modular.com/max-nightly", "conda-forge", "https://repo.prefix.dev/modular-community"]
 platforms = ["linux-64"]
-name = "grikod3"
-version = "0.1.1"
+name = "grikod2"
+version = "0.1.5"
 
 [package]
-name = "grikod3"
-version = "0.1.1"
+name = "grikod2"
+version = "0.1.5"
 license = "AGPL-3.0-or-later"
 
 [dependencies]
@@ -24,14 +24,14 @@ numpy = ">=2.4.6"
 
 [tasks]
 build = "python -m build"
-start = "python -c 'import grikod3; print(grikod3.__version__)'"
+start = "python -c 'import grikod2; print(grikod2.__version__)'"
 lint = "ruff check ."
 fmt = "ruff format ."
 serve = { cmd = "python -m http.server", cwd = "docs" }
-install-grikod3 = "pip install git+https://github.com/WhiteSymmetry/grikod3"
+install-grikod2 = "pip install git+https://github.com/WhiteSymmetry/grikod2"
 install = "pip install -e ."
 test = { depends-on = ["install"], cmd = "pytest" }
-install-deps = "pip install grikod3"
+install-deps = "pip install grikod2"
 
 [package.build.backend]
 name = "pixi-build-python"
