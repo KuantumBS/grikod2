@@ -4,13 +4,13 @@ schema_version: 1
 # this sets up "context variables" (in this case name and version) that
 # can later be used in Jinja expressions
 context:
-  version: 0.1.1
-  name: grikod3
+  version: 0.1.5
+  name: grikod2
 
 # top level package information (name and version)
 package:
-  name: grikod3
-  version: 0.1.1
+  name: grikod2
+  version: 0.1.5
 
 # location to get the source from
 #`source` are `url`, `sha256`, `md5`, `patches`, `file_name` and `target_directory`
@@ -33,7 +33,7 @@ requirements:
     - wheel
   run:
    - python >=3.11  # hypercomplex uyumlu versiyon
-   - numpy  # grikod3 numpy kullanıyor
+   - numpy  # grikod2 numpy kullanıyor
    - pip
 
 # tests to validate that the package works as expected
@@ -41,17 +41,17 @@ requirements:
 #  requires: []  # veya boş liste
 #  - python:
 #      imports:
-#        - grikod3
+#        - grikod2
 
 # information about the package
 about:
-  homepage: https://github.com/WhiteSymmetry/grikod3/
+  homepage: https://github.com/WhiteSymmetry/grikod2/
   license: GPL-3.0-or-later
-  summary: 'grikod3'
+  summary: 'grikod2'
   description: |
-    grikod3
-  repository: https://github.com/WhiteSymmetry/grikod3/
-  documentation: https://github.com/WhiteSymmetry/grikod3/
+    grikod2
+  repository: https://github.com/WhiteSymmetry/grikod2/
+  documentation: https://github.com/WhiteSymmetry/grikod2/
 
 # the below is conda-forge specific!
 extra:
