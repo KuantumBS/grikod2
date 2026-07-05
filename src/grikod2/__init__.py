@@ -6,6 +6,8 @@ import importlib
 import warnings
 import os
 
+__version__ = "0.1.5"
+
 # Geliştirme modunda yeniden yükleme (isteğe bağlı)
 if os.getenv("DEVELOPMENT") == "true":
     try:
@@ -16,13 +18,11 @@ if os.getenv("DEVELOPMENT") == "true":
 
 # Doğru modül adıyla içe aktarım yapın: grikod2.py → .grikod2
 try:
-    from .grikod2 import ikili_2_gri_kod, run_interactive_converter, InvalidBinaryError
+    from .grikod2 import ikili_2_gri_kod, run_interactive_converter, grikod2ikili, InvalidBinaryError
 except ImportError as e:
     warnings.warn(f"Gerekli modül yüklenemedi: {e}", ImportWarning)
 
-__all__ = ["ikili_2_gri_kod", "run_interactive_converter", "InvalidBinaryError"]
-
-__version__ = "1.1.4"
+__all__ = ["ikili_2_gri_kod", "run_interactive_converter", "grikod2ikili", "InvalidBinaryError"]
 
 def eski_fonksiyon():
     warnings.warn(
