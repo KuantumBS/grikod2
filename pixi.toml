@@ -34,10 +34,6 @@ test = { depends-on = ["install"], cmd = "pytest" }
 install-deps = "pip install grikod2"
 install-dev = "pip install -e ."
 
-[build-system]
-requires = ["setuptools>=84.0.0", "cython>=3.0.0", "build"]
-build-backend = "setuptools.build_meta"
-
 [package.build.backend]
 name = "pixi-build-python"
 version = "*"
