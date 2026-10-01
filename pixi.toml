@@ -29,10 +29,9 @@ start = "python -c 'import grikod2; print(grikod2.__version__)'"
 lint = "ruff check ."
 fmt = "ruff format ."
 serve = { cmd = "python -m http.server", cwd = "docs" }
-install-grikod2 = "pip install git+https://github.com/WhiteSymmetry/grikod2"
 install = "pip install -e ."
 test = { depends-on = ["install"], cmd = "pytest" }
-install-deps = "pip install grikod2"
+install-deps = "pip install -e ."
 install-dev = "pip install -e ."
 
 [package.build.backend]
