@@ -1,10 +1,11 @@
 name: Pixi CI
 
 on:
-  push:
-    branches: [ main, dev ]
-  pull_request:
-    branches: [ main ]
+  workflow_dispatch:
+
+permissions:
+  id-token: write
+  contents: read
 
 jobs:
   test-and-build:
@@ -12,7 +13,7 @@ jobs:
     strategy:
       matrix:
         os: [ubuntu-latest]  # İsterseniz: [ubuntu-latest, macos-latest]
-        python-version: ["3.11", "3.12", "3.13", "3.14"]
+        python-version: ["3.14"]
       fail-fast: false
 
     steps:
