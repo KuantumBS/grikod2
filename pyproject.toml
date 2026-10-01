@@ -1,16 +1,15 @@
 # pyproject.toml
 
 [build-system]
-requires = ["setuptools>=84.0.0"]
+requires = ["setuptools>=84.0.0", "cython>=3.2.5", "numpy"]
 build-backend = "setuptools.build_meta"
 
 [project]
 name = "grikod2"
 version = "1.1.6"
 dynamic = ["keywords", "maintainers"]
-license = "AGPL-3.0-or-later"  # SPDX ID
+license = "MIT"
 
-# Diğer proje bilgileri (isteğe bağlı ama tavsiye edilir)
 authors = [
     { name="Mehmet Keçeci", email="enfo@tuta.io" },
 ]
@@ -24,10 +23,8 @@ classifiers = [
     "Topic :: Scientific/Engineering :: Visualization",
 ]
 
-# Ana bağımlılıklarınız
 dependencies = [
     "numpy",
-    "setuptools",
 ]
 
 [tool.pytest.ini_options]
@@ -43,7 +40,7 @@ exclude = ["binder", "build*", "content", "data", "dist", "dist*", "docs", "docs
 include-package-data = true
 
 [tool.setuptools.package-data]
-"*" = ["*.py", "*.pyi", "*.pyd", "*.so"]  # Sadece Python dosyaları
+"*" = ["*.py", "*.pyx", "*.pyi", "*.pyd", "*.so"]  # .pyx ekleyin
 
 [project.urls]
 Homepage = "https://github.com/WhiteSymmetry/grikod2"
@@ -51,6 +48,7 @@ Repository = "https://github.com/WhiteSymmetry/grikod2"
 
 [dependency-groups]
 build = [
-    "setuptools (>=84.0.0)",
-    "cython (>=3.2.5)"
+    "setuptools>=84.0.0",
+    "cython>=3.2.5",
+    "numpy"
 ]
