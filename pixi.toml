@@ -21,6 +21,7 @@ hatchling = ">=1.29.0"
 setuptools_scm = ">=9.2.2"
 rattler-build = ">=0.67.0"
 numpy = ">=2.4.6"
+pytest = "*"
 
 [tasks]
 build = "python -m build"
