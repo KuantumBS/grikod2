@@ -27,6 +27,7 @@ classifiers = [
 # Ana bağımlılıklarınız
 dependencies = [
     "numpy",
+    "setuptools",
 ]
 
 [tool.pytest.ini_options]
