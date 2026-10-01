@@ -16,7 +16,7 @@ sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
 
 def get_version():
     """Parse the AST of __init__.py to find the __version__ assignment safely."""
-    with open('grikod2/__init__.py', 'r', encoding='utf-8') as f:
+    with open('grikod/__init__.py', 'r', encoding='utf-8') as f:
         tree = ast.parse(f.read())
         
     for node in ast.walk(tree):
@@ -27,10 +27,10 @@ def get_version():
                     if isinstance(node.value, ast.Constant) and isinstance(node.value.value, str):
                         return node.value.value
                         
-    raise RuntimeError("Unable to find __version__ in grikod2/__init__.py")
+    raise RuntimeError("Unable to find __version__ in grikod/__init__.py")
 """
 def get_version():
-    with open('grikod2/__init__.py', 'r', encoding='utf-8') as f:
+    with open('grikod/__init__.py', 'r', encoding='utf-8') as f:
         content = f.read()
     match = re.search(r"^__version__ = ['\"]([^'\"]*)['\"]", content, re.M)
     if match:
@@ -57,7 +57,7 @@ setup(
     url="https://github.com/WhiteSymmetry/grikod2",
     #packages=find_packages(),
     packages=find_packages(
-        include=["grikod2", "grikod2.*"],
+        include=["grikod", "grikod.*"],
         exclude=[
             "binder", "content", "data", "notebooks",
             "tests", "tests.*",
@@ -69,7 +69,7 @@ setup(
     ),
     include_package_data=True,
     package_data={
-        "grikod2": ["__init__.py", "_version.py", "*.pyi"]
+        "grikod": ["__init__.py", "_version.py", "*.pyi"]
     },
     install_requires=get_install_requires(),
     extras_require={
@@ -94,7 +94,7 @@ setup(
         "Topic :: Scientific/Engineering :: Mathematics"
     ],
     python_requires='>=3.11',
-    license="AGPL-3.0-or-later",
+    license="MIT",
     keywords="grikod2 grikod graycode",
     project_urls={
         "Documentation": "https://github.com/WhiteSymmetry/grikod2",
