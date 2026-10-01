@@ -7,7 +7,7 @@ package:
 source:
   path: .
   url: 
-  sha256: 
+  blake2b-256: 
 
 build:
   noarch: python  # Platformdan bağımsız bir paket oluşturur
