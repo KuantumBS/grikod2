@@ -27,6 +27,16 @@ dependencies = [
     "numpy",
 ]
 
+[package.build-dependencies]
+setuptools = ">=84.0.0"
+cython = ">=3.0.0"
+compilers = "*"  # Linux ortamında Cython kodunu derlemek için GCC/Clang kurar
+
+[tool.pixi.package.build-dependencies]
+setuptools = ">=84.0.0"
+cython = ">=3.0.0"
+compilers = "*"
+
 [tool.pytest.ini_options]
 testpaths = ["tests"]
 python_files = ["test_*.py"]
