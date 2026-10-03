@@ -6,5 +6,3 @@ numpy:
       echo "🧹 Removing conda_build_config.yaml to avoid multiple Python variants"
       rm conda_build_config.yaml
     fi
-python:
-  - "3.14"
