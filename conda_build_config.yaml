@@ -1,2 +1,10 @@
 numpy:
-  - 2.4
+  - "2.4"
+- name: Normalise conda_build_config.yaml
+  run: |
+    if [ -f conda_build_config.yaml ]; then
+      echo "🧹 Removing conda_build_config.yaml to avoid multiple Python variants"
+      rm conda_build_config.yaml
+    fi
+python:
+  - "3.14"
